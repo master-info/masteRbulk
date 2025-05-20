@@ -1,0 +1,13 @@
+[Unit]
+Description=BULK 103. Servizio massivo per estrazione Rischi Acuti. @2025 MaSTeR Information per CariParma / Credit Agricole.
+After=network.target
+
+[Service]
+User=masterdev
+Group=public
+ExecStart=/bin/sh /usr/local/share/public/bulk/clienti/cariparma/103-rischi/bulk-103.sh
+Restart=always
+
+[Install]
+WantedBy=default.target
+
