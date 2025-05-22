@@ -10,9 +10,14 @@ A parte il file `R` contenente il codice per elaborare la richiesta nello specif
 
 Per implementare il servizio, si proceda come segue:
 
+  - creare il percorso in *samba* con i due spazi interni `invio` e `risultati`, e successivamente 
+    applicare i permessi ad entrambi i livelli per assicurare l'esecuzione: `chmod -R 775 <percorso>`
+
   - creare il file con il codice $R$ da eseguire, poi copiarlo nello spazio `bulk` pubblico
 
   - copiare il file *bash* di avvio `.sh` nello spazio `bulk` pubblico
+  
+  - applicare i permessi per assicurare l'esecuzione: `chmod -R 775 <percorso>`
 
   - accedere ad ubuntu con un utente amministrativo (*sudoer*, sulla macchina di sviluppo si chiama `masterdev`)
 
