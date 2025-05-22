@@ -1,0 +1,12 @@
+[Unit]
+Description=BULK 03. Servizio massivo per Estrazione Rischi Acuti per Punti. @2025 MaSTeR Information.
+After=network.target
+
+[Service]
+User=masterdev
+Group=public
+ExecStart=/bin/sh /usr/local/share/public/bulk/master/03-rischi/bulk-03.sh
+Restart=always
+
+[Install]
+WantedBy=default.target

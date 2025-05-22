@@ -1,0 +1,12 @@
+[Unit]
+Description=BULK 02. Servizio massivo per la visualizzazione di Percorsi fra Punti. @2025 MaSTeR Information.
+After=network.target
+
+[Service]
+User=masterdev
+Group=public
+ExecStart=/bin/sh /usr/local/share/public/bulk/master/02-percorsi/bulk-02.sh
+Restart=always
+
+[Install]
+WantedBy=default.target

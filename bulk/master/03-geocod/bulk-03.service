@@ -1,0 +1,12 @@
+[Unit]
+Description=BULK 03. Servizio massivo per la Geocodifica (Diretta) di Indirizzi (> coordinate). @2025 MaSTeR Information.
+After=network.target
+
+[Service]
+User=masterdev
+Group=public
+ExecStart=/bin/sh /usr/local/share/public/bulk/master/03-geocod/bulk-03.sh
+Restart=always
+
+[Install]
+WantedBy=default.target

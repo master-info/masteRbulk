@@ -1,0 +1,12 @@
+[Unit]
+Description=BULK 06. Servizio massivo per l'associazione a coordinate dei corrispondenti codici di MicroTerritori. @2025 MaSTeR Information.
+After=network.target
+
+[Service]
+User=masterdev
+Group=public
+ExecStart=/bin/sh /usr/local/share/public/bulk/master/06-codimicro/bulk-06.sh
+Restart=always
+
+[Install]
+WantedBy=default.target

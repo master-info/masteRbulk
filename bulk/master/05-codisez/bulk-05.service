@@ -1,0 +1,12 @@
+[Unit]
+Description=BULK 05. Servizio massivo per l'associazione a coordinate del corrispondente codice di Sezione. @2025 MaSTeR Information.
+After=network.target
+
+[Service]
+User=masterdev
+Group=public
+ExecStart=/bin/sh /usr/local/share/public/bulk/master/05-codisez/bulk-05.sh
+Restart=always
+
+[Install]
+WantedBy=default.target

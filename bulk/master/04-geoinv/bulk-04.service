@@ -1,0 +1,12 @@
+[Unit]
+Description=BULK 04. Servizio massivo per la Geocodifica Inversa di Punti (coordinate > indirizzo). @2025 MaSTeR Information.
+After=network.target
+
+[Service]
+User=masterdev
+Group=public
+ExecStart=/bin/sh /usr/local/share/public/bulk/master/04-geoinv/bulk-04.sh
+Restart=always
+
+[Install]
+WantedBy=default.target

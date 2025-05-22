@@ -1,0 +1,12 @@
+[Unit]
+Description=BULK 01. Servizio massivo per Calcolo Distanze Stradali e Tempi di Percorrenza fra Punti. @2025 MaSTeR Information.
+After=network.target
+
+[Service]
+User=masterdev
+Group=public
+ExecStart=/bin/sh /usr/local/share/public/bulk/master/01-distempi/bulk-01.sh
+Restart=always
+
+[Install]
+WantedBy=default.target
