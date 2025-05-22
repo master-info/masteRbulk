@@ -1,0 +1,12 @@
+[Unit]
+Description=BULK 11. Servizio di conversione confini geografici da formato KML a shapefile. 2025 MaSTeR Information.
+After=network.target
+
+[Service]
+User=masterdev
+Group=public
+ExecStart=/bin/sh /usr/local/share/public/bulk/master/11-kml2shp/bulk-11.sh
+Restart=always
+
+[Install]
+WantedBy=default.target
